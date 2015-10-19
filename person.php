@@ -54,8 +54,13 @@
         <?php
             if (mysqli_num_rows($result2) > 0) {
                 while($row = mysqli_fetch_assic($result2)) {
+                    if ($row[1] == "") {
+                        $name = "Anonymous";
+                    } else {
+                        $name = $row[1]
+                    }
                     echo '<div style="background:#eee;border:1px solid #ccc;padding:5px 10px;">
-                    <h5>Name of writer: '.$row[1].'</h5>
+                    <h5>Name of writer: $name</h5>
                     <h5>Rating: '.$row[2].'</h5>
                     <p>'.$row[3].'</p>
                     </div>';
