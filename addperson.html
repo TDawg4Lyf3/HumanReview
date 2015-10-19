@@ -1,0 +1,20 @@
+/ Created by TDawg4Lyf3 in 2015
+// Just something i was thinking about, nothing special.
+// Not debugged, i am not that good at PHP, just to show the idea.
+
+<html>
+    <head>
+        <title>HumanReview - Rating people since 2015</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;"><em>HumanReview</em></h1>
+        <h2>Create user</h2>
+        <form action="inputperson.php" method="post" name="personcreate">
+          <p>Name: &nbsp; &nbsp; &nbsp; &nbsp;<input maxlength="30" name="name" size="30" type="text" /></p>
+          <p>Age: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<select name="age"><option value="0-19">0 to 19</option><option value="20-59">20 to 59</option><option value=" 60-100">60-100</option></select></p>
+          <p>Sex: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<select name="sex"><option value="Male">Male</option><option value="Female">Female</option></select></p>
+          <p>Image link:&nbsp;<input name="imagelink" size="30" type="url" /></p>
+          <p><input name="submit" type="button" value="Submit" /></p>
+      </form>
+    </body>
+</html>
