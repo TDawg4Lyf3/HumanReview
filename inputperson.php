@@ -105,7 +105,31 @@
     } else {
         $id = 0;
     }
-    // Still have to create the query for the table creation, just creates some tables as shown in the wiki.
+    
+    $sql2 = "CREATE TABLE data_$id (
+    id INT() UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(40) NOT NULL,
+    age VARCHAR(14) NOT NULL,
+    sex VARCHAR(14) NOT NULL,
+    imagelink VARCHAR() NOT NULL,
+    averagerating INT() NOT NULL
+    )
+    INSERT INTO data_$id (id, name, age, sex, imagelink)
+    VALUES ($id, $name, $age, $sex, $imaeglink, 2.5)
+    CREATE TABLE review_$id (
+    name VARCHAR(40) PRIMARY KEY,
+    rating INT(),
+    text VARCHAR()
+    )
+    CREATE TABLE badges_$id (
+    badgename VARCHAR(30) PRIMARY KEY,
+    why VARCHAR()
+    )";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "Done! Please click <a href="person.php?$id">here</a>;
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
     $conn->close();
-    echo 'Page online!';
 ?>
