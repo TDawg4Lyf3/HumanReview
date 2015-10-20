@@ -66,7 +66,7 @@
                     </div>';
                 }
             } else {
-                echo '<div style="background:#eee;border:1px solid #ccc;padding:5px 10px;">No reviews yet, he is not really famous i guess...</div';
+                echo '<div style="background:#eee;border:1px solid #ccc;padding:5px 10px;">No reviews yet, he is not really famous i guess...</div>';
             }
         ?>
     </body>
