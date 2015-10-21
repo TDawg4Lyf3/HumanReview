@@ -40,7 +40,7 @@
     $sex = $_GET['sex'];
     $imagelink = $_GET['imagelink'];
     
-    if (isImage($imagelink) == false) {
+    if (isImage($imagelink) == false or $imagelink == ">AwesomeAssMemes") {
         // I was bored... Yeah, you can replace this with the things in comments
         $number = rand(0,12);
         if ($number == 0) {
