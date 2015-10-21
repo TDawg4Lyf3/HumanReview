@@ -42,7 +42,7 @@
     
     if (isImage($imagelink) == false) {
         // I was bored... Yeah, you can replace this with the things in comments
-        $number = rand(0,10);
+        $number = rand(0,12);
         if ($number == 0) {
             $imagelink = "http://i2.kym-cdn.com/entries/icons/original/000/000/007/rickroll.jpg";
         }
@@ -76,6 +76,12 @@
         if ($number == 10) {
             $imagelink = "http://i1.kym-cdn.com/photos/images/original/000/996/144/e0f.jpg";
         }
+        if ($number == 11) {
+            $imagelink = "http://i2.kym-cdn.com/entries/icons/original/000/017/104/0e9.jpg";
+        }
+        if ($number == 12) {
+            $imagelink = "http://i0.kym-cdn.com/entries/icons/original/000/002/830/sad_frog.jpg";
+        } 
         // Replace the code above with this if you don't want no memes up until the if statement with the isImage function
         // $imagelink = "";
         // You can do a picture of your choice in this variable
